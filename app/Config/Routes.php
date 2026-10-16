@@ -120,3 +120,21 @@ $routes->group('correo', static function ($routes) {
     $routes->post('update/(:num)', 'Correo::update/$1');
     $routes->match(['get', 'post'], 'delete/(:num)', 'Correo::delete/$1');
 });
+// 6. Módulo Teléfono
+$routes->group('telefono', static function ($routes) {
+    $routes->get('', 'Telefono::index');
+    $routes->get('actual', 'Telefono::actual');
+    $routes->get('actual/(:num)', 'Telefono::actual/$1');
+    $routes->get('elprimero', 'Telefono::elprimero');
+    $routes->get('elultimo', 'Telefono::elultimo');
+    $routes->get('siguiente/(:num)', 'Telefono::siguiente/$1');
+    $routes->get('anterior/(:num)', 'Telefono::anterior/$1');
+    $routes->get('listar', 'Telefono::listar');
+    $routes->get('add', 'Telefono::add');
+    $routes->get('add/(:num)', 'Telefono::add/$1');
+    $routes->get('create', 'Telefono::add');
+    $routes->post('store', 'Telefono::store');
+    $routes->get('edit/(:num)', 'Telefono::edit/$1');
+    $routes->post('update/(:num)', 'Telefono::update/$1');
+    $routes->match(['get', 'post'], 'delete/(:num)', 'Telefono::delete/$1');
+});
