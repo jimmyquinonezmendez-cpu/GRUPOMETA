@@ -252,6 +252,11 @@
                     <span>Correo Electrónico</span>
                 </a>
             </li>
+            <a href="<?= base_url('telefono') ?>" class="nav-link <?= (isset($module) && $module === 'telefono') ? 'active' : '' ?>">
+                    <i class="bi bi-telephone-fill"></i>
+                    <span>Teléfono</span>
+                </a>
+            </li>
         </ul>
 
         <div class="p-3 mt-auto border-top border-secondary border-opacity-25 text-center">
@@ -279,7 +284,7 @@
                         <li><a class="dropdown-item" href="<?= base_url('persona/add') ?>"><i class="bi bi-person-plus me-2 text-primary"></i>Nueva Persona</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('direccion/add') ?>"><i class="bi bi-geo-alt me-2 text-info"></i>Nueva Dirección</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('correoelectronico/add') ?>"><i class="bi bi-envelope me-2 text-success"></i>Nuevo Correo</a></li>
-                        <li><hr class="dropdown-divider"></li>
+                        <li><hr class="dropdown-divider"></li>                        <li><a class="dropdown-item" href="<?= base_url('telefono/add') ?>"><i class="bi bi-telephone me-2 text-success"></i>Nuevo Teléfono</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('sexo/add') ?>"><i class="bi bi-gender-ambiguous me-2 text-warning"></i>Nuevo Sexo</a></li>
                         <li><a class="dropdown-item" href="<?= base_url('estadocivil/add') ?>"><i class="bi bi-heart me-2 text-danger"></i>Nuevo Estado Civil</a></li>
                     </ul>
@@ -333,7 +338,7 @@
         <footer>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                 <div>
-                    <strong>Sistema de Información eysfwis</strong> &copy; <?= date('Y') ?> | Gestión de Persona, Sexo, Dirección, Correo Electrónico y Estado Civil.
+                    <strong>Sistema de Información eysfwis</strong> &copy; <?= date('Y') ?> | Gestión de Persona, Sexo, Dirección, Correo Electrónico, Teléfono y Estado Civil.
                 </div>
                 <div>
                     <span class="badge bg-light text-secondary border">CodeIgniter 4 + MariaDB</span>
