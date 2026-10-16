@@ -237,6 +237,79 @@
                             <div class="mt-2">
                                 <a href="<?= base_url('correoelectronico/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-outline-success">
                                     <i class="bi bi-plus me-1"></i> Registrar Correo
+
+
+                                    <!-- Bloque de Teléfonos -->
+            <div class="card shadow-sm mt-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-dark">
+                        <i class="bi bi-telephone-fill text-success me-2"></i>Teléfonos (<?= count($telefonos) ?>)
+                    </span>
+                    <a href="<?= base_url('telefono/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-success">
+                        <i class="bi bi-plus-circle me-1"></i> Agregar Teléfono
+                    </a>
+                </div>
+                <div class="card-body p-0">
+                    <?php if (!empty($telefonos)): ?>
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo</th>
+                                        <th>Número</th>
+                                        <th>F. Obtención</th>
+                                        <th class="text-end">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($telefonos as $tel): ?>
+                                        <tr>
+                                            <td>
+                                                <span class="badge bg-success-subtle text-success-emphasis">
+                                                    <?= esc($tel['tipo'] ?? 'Celular') ?>
+                                                </span>
+                                            </td>
+                                            <td class="fw-medium">
+                                                <i class="bi bi-telephone me-1 text-muted"></i>
+                                                <a href="tel:<?= esc($tel['numero']) ?>" class="text-decoration-none">
+                                                    <?= esc($tel['numero']) ?>
+                                                </a>
+                                            </td>
+                                            <td class="text-muted small">
+                                                <?= !empty($tel['fechaoptencion']) ? date('d/m/Y', strtotime($tel['fechaoptencion'])) : '-' ?>
+                                            </td>
+                                            <td class="text-end">
+                                                <div class="btn-group btn-group-sm">
+                                                    <a href="<?= base_url('telefono/actual/' . $tel['idtelefono']) ?>" class="btn btn-outline-secondary" title="Ver en Módulo">
+                                                        <i class="bi bi-eye"></i>
+                                                    </a>
+                                                    <a href="<?= base_url('telefono/edit/' . $tel['idtelefono']) ?>" class="btn btn-outline-warning text-dark" title="Editar">
+                                                        <i class="bi bi-pencil"></i>
+                                                    </a>
+                                                    <a href="<?= base_url('telefono/delete/' . $tel['idtelefono'] . '?from_persona=1') ?>" class="btn btn-outline-danger" title="Eliminar"
+                                                       onclick="return confirm('¿Eliminar este teléfono de la persona?');">
+                                                        <i class="bi bi-trash"></i>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    <?php else: ?>
+                        <div class="p-4 text-center text-muted">
+                            <i class="bi bi-telephone display-6 d-block mb-2 text-secondary text-opacity-50"></i>
+                            No tiene teléfonos registrados.
+                            <div class="mt-2">
+                                <a href="<?= base_url('telefono/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-outline-success">
+                                    <i class="bi bi-plus me-1"></i> Registrar Teléfono
+                                </a>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
                                 </a>
                             </div>
                         </div>
