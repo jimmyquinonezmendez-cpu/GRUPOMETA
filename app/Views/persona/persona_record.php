@@ -179,7 +179,7 @@
                         <i class="bi bi-envelope-at-fill text-success me-2"></i>Correos Electrónicos (<?= count($correos) ?>)
                     </span>
                     <a href="<?= base_url('correoelectronico/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-success">
-                        <i class="bi bi-plus-circle me-1"></i> Agregar Correo
+                        <i class="bi bi-plus-circle me-1"></i> Nuevo Correo
                     </a>
                 </div>
                 <div class="card-body p-0">
