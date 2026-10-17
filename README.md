@@ -68,3 +68,10 @@ http://localhost/eysfwis/
  RANGEL QUINTEROS VIVIEN
   BEDOYA MINA LIZ NAOMY
   MONTALVO BENITES KATRINA
+
+  ## 🧰 Tecnologías utilizadas
+
+  - PHP 8.1+
+  - CodeIgniter 4
+  - MariaDB / MySQL
+  - Bootstrap
