@@ -64,7 +64,7 @@
                             <?= !empty($correo['fechaoptencion']) ? date('d/m/Y', strtotime($correo['fechaoptencion'])) : 'No registrada' ?>
                         </dd>
 
-                        <dt class="col-sm-4 text-muted small text-uppercase">Persona Propietaria:</dt>
+                        <dt class="col-sm-4 text-muted small text-uppercase">Propietario:</dt>
                         <dd class="col-sm-8">
                             <?php if (!empty($correo['idpersona'])): ?>
                                 <a href="<?= base_url('persona/actual/' . $correo['idpersona']) ?>" class="fw-bold text-decoration-none">
