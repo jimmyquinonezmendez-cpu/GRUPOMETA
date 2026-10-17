@@ -338,7 +338,7 @@
         <footer>
             <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
                 <div>
-                    <strong>Sistema de Información eysfwis</strong> - Equipo GRUPOMETA &copy; <?= date('Y') ?> | Gestión de Persona, ...
+                    <strong>Sistema de Información GRUPOMETA</strong> - Equipo GRUPOMETA &copy; <?= date('Y') ?> | Gestión de Persona, ...
                 </div>
                 <div>
                     <span class="badge bg-light text-secondary border">CodeIgniter 4 + MariaDB</span>
