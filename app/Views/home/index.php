@@ -8,7 +8,7 @@
         <h2 class="h3 fw-bold text-dark mb-1">
             <i class="bi bi-speedometer2 text-primary me-2"></i>Panel de Control y Estadísticas
         </h2>
-        <p class="text-muted mb-0">Sistema integral para la administración de personas, sus catálogos y datos de contacto.</p>
+        <p class="text-muted mb-0">  Bienvenido a GRUPOMETA: administra personas, catálogos y datos de contacto en un solo lugar..</p>
     </div>
     <div class="d-flex gap-2">
         <a href="<?= base_url('persona/add') ?>" class="btn btn-primary">
