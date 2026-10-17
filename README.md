@@ -1,4 +1,4 @@
-# eysfwis - Sistema de Información Web
+  # GRUPOMETA - Sistema de Información Web
 
 Sistema de información desarrollado con **CodeIgniter 4** y base de datos relacional **MariaDB / MySQL** para la gestión integral de entidades persona, sexo, dirección, correo electrónico y estado civil.
 
