@@ -18,7 +18,7 @@
         :root {
             --ci-primary: #0d6efd;
             --ci-primary-dark: #0a58ca;
-            --ci-sidebar-bg: #1e293b;
+             --ci-sidebar-bg: #0f172a;
             --ci-sidebar-hover: #334155;
             --ci-sidebar-active: #0284c7;
             --ci-bg: #f8fafc;
