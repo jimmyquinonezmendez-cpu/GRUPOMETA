@@ -55,3 +55,10 @@ o directamente:
 ```
 http://localhost/eysfwis/
 ```
+ ## 🛠️ Instalación
+
+```bash
+  composer install
+  cp .env.example .env
+  php spark serve
+```
