@@ -99,7 +99,7 @@
                     </a>
                     <button type="button" class="btn btn-sm btn-outline-danger"
                             onclick="confirmarBorrado('<?= base_url('persona/delete/' . $persona['idpersona']) ?>', 'Se eliminará la persona <?= esc($persona['nombres'] . ' ' . $persona['apellidos']) ?> junto con todas sus direcciones y correos.')">
-                        <i class="bi bi-trash-fill me-1"></i> Borrar
+                        <i class="bi bi-trash-fill me-1"></i>Eliminar Persona
                     </button>
                 </div>
             </div>
