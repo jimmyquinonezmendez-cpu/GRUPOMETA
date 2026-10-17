@@ -62,3 +62,9 @@ http://localhost/eysfwis/
   cp .env.example .env
   php spark serve
 ```
+## 👥 Integrantes
+
+ QUIÑONEZ MENDEZ JIMMY
+ RANGEL QUINTEROS VIVIEN
+  BEDOYA MINA LIZ NAOMY
+  MONTALVO BENITES KATRINA
