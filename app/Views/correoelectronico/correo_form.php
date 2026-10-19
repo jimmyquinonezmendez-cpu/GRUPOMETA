@@ -62,7 +62,7 @@
                             </select>
                         </div>
 
-                        <!-- Fecha de Obtención -->
+                        <!-- Fecha de Registro -->
                         <div class="col-md-6">
                             <label for="fechaoptencion" class="form-label fw-semibold">Fecha de Obtención / Creación</label>
                             <input type="date" class="form-control <?= isset($errors['fechaoptencion']) ? 'is-invalid' : '' ?>" id="fechaoptencion" name="fechaoptencion" value="<?= esc($old['fechaoptencion'] ?? date('Y-m-d')) ?>">
