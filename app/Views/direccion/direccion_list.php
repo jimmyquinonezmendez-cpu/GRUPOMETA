@@ -98,7 +98,7 @@
                     <?php else: ?>
                         <tr>
                             <td colspan="5" class="text-center py-5 text-muted">
-                                No se encontraron direcciones registradas.
+                                Registre una nueva para comenzar.
                             </td>
                         </tr>
                     <?php endif; ?>
