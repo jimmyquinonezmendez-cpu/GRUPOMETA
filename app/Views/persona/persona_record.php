@@ -15,7 +15,7 @@
             <i class="bi bi-person-x display-3"></i>
         </div>
         <h4 class="text-dark">No hay personas registradas</h4>
-        <p class="text-secondary">Comience registrando una nueva persona en el sistema.</p>
+        <p class="text-secondary">Registre la primera persona para comenzar.</p>
         <div>
             <a href="<?= base_url('persona/add') ?>" class="btn btn-primary">
                 <i class="bi bi-person-plus-fill me-1"></i> Registrar Primera Persona
