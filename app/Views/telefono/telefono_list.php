@@ -17,7 +17,7 @@
         </div>
         <div class="d-flex gap-2">
             <a href="<?= base_url('telefono/add' . (!empty($idpersona) ? '/' . $idpersona : '')) ?>" class="btn btn-success btn-sm">
-                <i class="bi bi-plus-circle me-1"></i> Nuevo Teléfono
+                <i class="bi bi-plus-circle me-1"></i> Registrar Teléfono
             </a>
             <a href="<?= base_url('telefono') ?>" class="btn btn-outline-secondary btn-sm">
                 <i class="bi bi-card-text me-1"></i> Ficha Registro
