@@ -17,7 +17,7 @@
         </div>
         <div class="d-flex gap-2">
             <a href="<?= base_url('direccion/add' . (!empty($idpersona) ? '/' . $idpersona : '')) ?>" class="btn btn-info text-white btn-sm">
-                <i class="bi bi-plus-circle me-1"></i> Nueva Dirección
+                <i class="bi bi-plus-circle me-1"></i> Registrar Dirección
             </a>
             <a href="<?= base_url('direccion') ?>" class="btn btn-outline-secondary btn-sm">
                 <i class="bi bi-card-text me-1"></i> Ficha Registro
