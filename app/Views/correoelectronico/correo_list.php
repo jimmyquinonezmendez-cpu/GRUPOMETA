@@ -31,7 +31,7 @@
             <div class="col-md-5">
                 <div class="input-group input-group-sm">
                     <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
-                    <input type="text" name="q" class="form-control" placeholder="Buscar por correo, persona, cédula..." value="<?= esc($search ?? '') ?>">
+                    <input type="text" name="q" class="form-control" placeholder="Buscar por correo, nombre, cédula..." value="<?= esc($search ?? '') ?>">
                 </div>
             </div>
             <?php if (!empty($idpersona)): ?>
