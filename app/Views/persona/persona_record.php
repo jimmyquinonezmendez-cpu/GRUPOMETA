@@ -161,7 +161,7 @@
                     <?php else: ?>
                         <div class="p-4 text-center text-muted">
                             <i class="bi bi-geo-alt display-6 d-block mb-2 text-secondary text-opacity-50"></i>
-                            No tiene direcciones registradas.
+                            Esta persona aun no tiene direcciones.
                             <div class="mt-2">
                                 <a href="<?= base_url('direccion/add/' . $persona['idpersona']) ?>" class="btn btn-sm btn-outline-info">
                                     <i class="bi bi-plus me-1"></i> Registrar Dirección
